@@ -163,10 +163,42 @@ function initReveals() {
   nodes.forEach((el) => io.observe(el));
 }
 
+function initPawTrail() {
+  const field = document.getElementById("paw-field");
+  if (!field) return;
+
+  const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const finePointer = window.matchMedia("(pointer: fine)").matches;
+  if (reduced || !finePointer) return;
+
+  let last = 0;
+  const gap = 70;
+
+  const onMove = (e) => {
+    const now = performance.now();
+    if (now - last < gap) return;
+    last = now;
+
+    const paw = document.createElement("img");
+    paw.src = "asset/paw.svg";
+    paw.alt = "";
+    paw.className = "trail-paw";
+    const rot = (Math.random() * 50 - 25).toFixed(1);
+    paw.style.setProperty("--rot", `${rot}deg`);
+    paw.style.left = `${e.clientX - 11}px`;
+    paw.style.top = `${e.clientY - 11}px`;
+    field.appendChild(paw);
+    setTimeout(() => paw.remove(), 1100);
+  };
+
+  window.addEventListener("pointermove", onMove, { passive: true });
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   initContract();
   initChart();
   initNav();
   initSocialLinks();
   initReveals();
+  initPawTrail();
 });

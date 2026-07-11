@@ -3,30 +3,32 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Milly | $Milly</title>
-  <meta name="description" content="Milly — Create. Inspire. Empower. with $Milly on Uniswap." />
-  <meta property="og:title" content="Milly  | $Milly" />
-  <meta property="og:description" content="Create. Inspire. Empower. $Milly on Uniswap." />
-  <meta property="og:image" content="banner.png" />
+  <title>Milly | $Milly — Robinhood Cat</title>
+  <meta name="description" content="Milly — the community cat of Robinhood Chain. Create. Inspire. Empower. with $Milly." />
+  <meta property="og:title" content="Milly | $Milly" />
+  <meta property="og:description" content="The community cat of Robinhood Chain. $Milly on Uniswap." />
+  <meta property="og:image" content="asset/banner.png" />
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" href="asset/favicon.svg" type="image/svg+xml" />
-  <link rel="apple-touch-icon" href="asset/quill-mark.png" />
+  <link rel="apple-touch-icon" href="asset/logo.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Bebas+Neue&family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <div class="noise" aria-hidden="true"></div>
+  <div class="paw-field" id="paw-field" aria-hidden="true"></div>
 
   <header class="site-header">
     <nav class="nav">
       <a href="#top" class="nav-brand">
-        <img src="asset/quill-lime.svg" alt="" class="nav-mark" />
+        <img src="asset/logo.png" alt="" class="nav-mark" />
         <span class="nav-wordmark">Milly</span>
       </a>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
         <li><a href="#chart">Chart</a></li>
         <li><a href="#buy">Buy</a></li>
         <li class="nav-socials">
@@ -49,14 +51,19 @@
 
   <section class="hero" id="top">
     <div class="hero-visual" aria-hidden="true">
-      <img src="banner.png" alt="" class="hero-banner" />
+      <img src="asset/banner.png" alt="" class="hero-banner" />
       <div class="hero-veil"></div>
+      <div class="hero-sparkles">
+        <img src="asset/star.svg" class="spark spark-1" alt="" />
+        <img src="asset/bolt.svg" class="spark spark-2" alt="" />
+        <img src="asset/star-white.svg" class="spark spark-3" alt="" />
+        <img src="asset/paw.svg" class="spark spark-4" alt="" />
+        <img src="asset/star-white.svg" class="spark spark-5" alt="" />
+      </div>
     </div>
     <div class="hero-content">
-      <p class="hero-brand">
-        <img src="asset/quill-lime.svg" alt="" class="hero-quill" />
-        Milly
-      </p>
+      <p class="hero-brand">Milly</p>
+      <p class="hero-lede">The community cat of the Robinhood Chain.</p>
       <div class="hero-actions">
         <a href="https://app.uniswap.org/swap?inputCurrency=eth&outputCurrency=0xcomingsoon&chain=mainnet" data-pumpfun target="_blank" rel="noopener noreferrer" class="btn btn-primary">Buy $Milly</a>
         <a href="#about" class="btn btn-ghost">Meet Milly</a>
@@ -66,52 +73,106 @@
 
   <div class="ticker" aria-hidden="true">
     <div class="ticker-track">
-      <span><img src="asset/quill-on-lime.svg" alt="" /> Create</span>
-      <span class="ticker-sep">|</span>
-      <span><img src="asset/quill-on-lime.svg" alt="" /> Inspire</span>
-      <span class="ticker-sep">|</span>
-      <span><img src="asset/quill-on-lime.svg" alt="" /> Empower</span>
-      <span class="ticker-sep">|</span>
-      <span>$Milly</span>
-      <span class="ticker-sep">|</span>
-      <span class="ticker-sep">|</span>
-      <span><img src="asset/quill-on-lime.svg" alt="" /> Create</span>
-      <span class="ticker-sep">|</span>
-      <span><img src="asset/quill-on-lime.svg" alt="" /> Inspire</span>
-      <span class="ticker-sep">|</span>
-      <span><img src="asset/quill-on-lime.svg" alt="" /> Empower</span>
-      <span class="ticker-sep">|</span>
-      <span>$Milly</span>
-      <span class="ticker-sep">|</span>
-      <span class="ticker-sep">|</span>
+      <span><img src="asset/paw-black.svg" alt="" /> Create</span>
+      <span class="ticker-sep">·</span>
+      <span><img src="asset/paw-black.svg" alt="" /> Inspire</span>
+      <span class="ticker-sep">·</span>
+      <span><img src="asset/paw-black.svg" alt="" /> Empower</span>
+      <span class="ticker-sep">·</span>
+      <span class="ticker-token">$Milly</span>
+      <span class="ticker-sep">·</span>
+      <span><img src="asset/bolt-black.svg" alt="" /> Robinhood Cat</span>
+      <span class="ticker-sep">·</span>
+      <span><img src="asset/paw-black.svg" alt="" /> Create</span>
+      <span class="ticker-sep">·</span>
+      <span><img src="asset/paw-black.svg" alt="" /> Inspire</span>
+      <span class="ticker-sep">·</span>
+      <span><img src="asset/paw-black.svg" alt="" /> Empower</span>
+      <span class="ticker-sep">·</span>
+      <span class="ticker-token">$Milly</span>
+      <span class="ticker-sep">·</span>
+      <span><img src="asset/bolt-black.svg" alt="" /> Robinhood Cat</span>
+      <span class="ticker-sep">·</span>
     </div>
   </div>
 
   <main>
     <section class="section about" id="about">
+      <div class="about-paws" aria-hidden="true">
+        <img src="asset/paw-icon.png" class="float-paw fp-1" alt="" />
+        <img src="asset/paw-icon.png" class="float-paw fp-2" alt="" />
+        <img src="asset/paw-icon.png" class="float-paw fp-3" alt="" />
+      </div>
       <div class="container about-layout">
         <div class="about-portrait reveal">
-          <img src="logo.png" alt="Milly — the face of $Milly" />
+          <div class="portrait-ring"></div>
+          <img src="asset/logo.png" alt="Milly — the face of $Milly" />
+          <div class="portrait-glow"></div>
         </div>
         <div class="about-copy reveal">
           <p class="eyebrow">
-            <img src="asset/quill-lime.svg" alt="" />
+            <img src="asset/paw.svg" alt="" />
             The Character
           </p>
-          <h2 class="section-title"><span class="lime">About Milly</span></h2>
+          <h2 class="section-title">About <span class="brush">Milly</span></h2>
           <p class="section-text">
             <strong>Milly</strong> is the community cat of the <strong>Robinhood</strong> Chain—a simple, memeable mascot built to unite Reddit-style communities around one shared movement.
           </p>
+          <ul class="value-row">
+            <li><img src="asset/paw-black.svg" alt="" /> Create</li>
+            <li><img src="asset/bolt-black.svg" alt="" /> Inspire</li>
+            <li><img src="asset/paw-black.svg" alt="" /> Empower</li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <img src="asset/divider-strip.png" alt="" class="band-divider" aria-hidden="true" />
+    <div class="band-divider-wrap" aria-hidden="true">
+      <img src="asset/divider-strip.png" alt="" class="band-divider" />
+    </div>
+
+    <section class="section gallery" id="gallery">
+      <div class="container">
+        <p class="eyebrow center">
+          <img src="asset/paw.svg" alt="" />
+          Meet the Cat
+        </p>
+        <h2 class="section-title center">Milly <span class="brush">Moments</span></h2>
+        <p class="section-sub center">Same kitten. Same lime. Pure Robinhood cat energy.</p>
+        <div class="gallery-grid">
+          <figure class="gallery-item gallery-hero reveal">
+            <img src="asset/milly-scene.png" alt="Milly in neon street-art glow" loading="lazy" />
+          </figure>
+          <figure class="gallery-item reveal">
+            <img src="asset/milly-pose.png" alt="Milly sitting on lime green" loading="lazy" />
+          </figure>
+          <figure class="gallery-item reveal">
+            <img src="asset/milly-wave.png" alt="Milly waving with a paw" loading="lazy" />
+          </figure>
+          <figure class="gallery-item reveal">
+            <img src="asset/milly-look.png" alt="Milly looking curious" loading="lazy" />
+          </figure>
+          <figure class="gallery-item reveal">
+            <img src="asset/logo.png" alt="Milly logo portrait" loading="lazy" />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <div class="scene-strip" aria-hidden="true">
+      <img src="asset/milly-scene.png" alt="" class="scene-strip-img" />
+      <div class="scene-strip-veil"></div>
+      <div class="scene-strip-paws">
+        <img src="asset/paw-icon.png" alt="" />
+        <img src="asset/paw-icon.png" alt="" />
+        <img src="asset/paw-icon.png" alt="" />
+      </div>
+    </div>
 
     <section class="section contract" id="contract">
       <div class="container narrow reveal">
         <p class="eyebrow center">
-          <img src="asset/quill.svg" alt="" />
+          <img src="asset/bolt.svg" alt="" />
           On-chain
         </p>
         <h2 class="section-title center">Token Address</h2>
@@ -129,7 +190,7 @@
     <section class="section chart-section" id="chart">
       <div class="container reveal">
         <p class="eyebrow">
-          <img src="asset/quill-lime.svg" alt="" />
+          <img src="asset/star.svg" alt="" />
           Live Chart
         </p>
         <h2 class="section-title center">DexScreener</h2>
@@ -155,33 +216,42 @@
     </section>
 
     <section class="section buy" id="buy">
+      <div class="buy-paws" aria-hidden="true">
+        <img src="asset/paw-black.svg" class="buy-paw bp-1" alt="" />
+        <img src="asset/paw-black.svg" class="buy-paw bp-2" alt="" />
+        <img src="asset/paw-black.svg" class="buy-paw bp-3" alt="" />
+        <img src="asset/paw-black.svg" class="buy-paw bp-4" alt="" />
+      </div>
       <div class="container">
         <p class="eyebrow center">
-          <img src="asset/quill-on-lime.svg" alt="" />
+          <img src="asset/paw-black.svg" alt="" />
           How to Buy
         </p>
-        <h2 class="section-title center">Get Your <span class="lime">$Milly</span></h2>
+        <h2 class="section-title center">Get Your <span class="brush-dark">$Milly</span></h2>
         <div class="steps">
           <article class="step reveal">
+            <img src="asset/milly-pose.png" alt="" class="step-img" loading="lazy" />
             <span class="step-num">01</span>
             <h3>Wallet</h3>
             <p>Set up a wallet that supports Ethereum. Fund it with ETH.</p>
           </article>
           <article class="step reveal">
+            <img src="asset/milly-wave.png" alt="" class="step-img" loading="lazy" />
             <span class="step-num">02</span>
             <h3>Uniswap</h3>
             <p>Open Uniswap, connect your wallet, and paste the verified $Milly contract.</p>
           </article>
           <article class="step reveal">
+            <img src="asset/milly-look.png" alt="" class="step-img" loading="lazy" />
             <span class="step-num">03</span>
             <h3>Swap</h3>
             <p>Swap ETH → $Milly. Double-check the address, then confirm.</p>
           </article>
         </div>
         <div class="buy-cta">
-          <a href="https://app.uniswap.org/swap?inputCurrency=ETH&outputCurrency=0xcomingsoon&chain=mainnet" data-pumpfun target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">Buy on Uniswap</a>
-          <a href="https://t.me/millycathood" data-telegram target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-lg">Telegram</a>
-          <a href="https://x.com/millycat_x" data-twitter target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-lg">Follow on X</a>
+          <a href="https://app.uniswap.org/swap?inputCurrency=ETH&outputCurrency=0xcomingsoon&chain=mainnet" data-pumpfun target="_blank" rel="noopener noreferrer" class="btn btn-dark btn-lg">Buy on Uniswap</a>
+          <a href="https://t.me/millycathood" data-telegram target="_blank" rel="noopener noreferrer" class="btn btn-ghost-dark btn-lg">Telegram</a>
+          <a href="https://x.com/millycat_x" data-twitter target="_blank" rel="noopener noreferrer" class="btn btn-ghost-dark btn-lg">Follow on X</a>
         </div>
       </div>
     </section>
@@ -190,10 +260,16 @@
   <footer class="footer">
     <div class="container footer-inner">
       <div class="footer-brand">
-        <img src="logo.png" alt="" class="footer-logo" />
+        <img src="asset/logo.png" alt="" class="footer-logo" />
         <div>
           <strong>Milly</strong>
+          <span>Robinhood Cat · $Milly</span>
         </div>
+      </div>
+      <div class="footer-paws" aria-hidden="true">
+        <img src="asset/paw.svg" alt="" />
+        <img src="asset/paw.svg" alt="" />
+        <img src="asset/paw.svg" alt="" />
       </div>
       <p class="footer-disclaimer">
         $Milly is a meme token with no intrinsic value or expectation of financial return.
