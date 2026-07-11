@@ -2,7 +2,7 @@
 //  CONFIG — Update these when your token launches
 // ─────────────────────────────────────────────
 const CONFIG = {
-  tokenAddress: "0xa60e66882239447662bb9773391478e7682e0d40",
+  tokenAddress: "0xcomingsoon",
 
   // Optional: DexScreener pair address (overrides tokenAddress for chart)
   dexScreenerPair: "",
@@ -10,8 +10,8 @@ const CONFIG = {
   // Uniswap swap page — auto-built from tokenAddress if left empty
   pumpFunUrl: "",
 
-  twitter: "https://x.com/maraagent_x",
-  telegram: "https://t.me/maraagent_tg",
+  twitter: "https://x.com/millycat_x",
+  telegram: "https://t.me/millycathood",
 };
 
 const PLACEHOLDER_CA = "COMING_SOON — paste your token address in script.js";
