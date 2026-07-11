@@ -2,7 +2,7 @@
 //  CONFIG — Update these when your token launches
 // ─────────────────────────────────────────────
 const CONFIG = {
-  tokenAddress: "0xcomingsoon",
+  tokenAddress: "0xc91e6d9a339b0aedcc1db2db82c84225614521e0",
 
   // Optional: DexScreener pair address (overrides tokenAddress for chart)
   dexScreenerPair: "",
